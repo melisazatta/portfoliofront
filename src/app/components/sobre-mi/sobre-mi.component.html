@@ -1,0 +1,22 @@
+<div class="row">
+        <button type="button" class="btn btn-outline-info" routerLink="/editsobremi/1">
+            Editar persona
+        </button>
+        <div class="col-xs-12 col-md-3 col-lg-2">
+            <img src={{persona.img}} id="foto" class="img-fluid" alt=""> 
+        </div>
+        <div class="col-xs-12 col-md-3 col-lg-2">
+            <h5 id="nombre">
+                {{persona.nombre}} {{persona.apellido}}
+            </h5>
+            <p>
+                FullStack Developer Jr
+            </p>
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-8">
+            <span>
+            <h1>Sobre mí</h1>
+            <p>{{persona.descripcion}}</p>
+        </span>
+        </div>
+</div>

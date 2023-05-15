@@ -1,0 +1,148 @@
+<div class="row">
+
+  <h1>Hard & Soft skills</h1>
+  <div class="col-lg-2">
+      <button type="button" routerLink="/newskill" class="btn btn-outline-info">Nueva Skill</button>
+  </div>
+
+
+  <div class="text-center col-sm-4 col-md-4 col-lg-4 circulo" *ngFor="let skill of skill">
+      <circle-progress 
+      [percent]="(skill.porcentaje)" 
+      [radius]="90" [imageSrc]="''" 
+      [title]="(skill.nombre)"
+      [titleColor]="'#212F3C'"
+      [showTitle]="true" 
+      [showImage]="false" 
+      [imageHeight]="70" 
+      [imageWidth]="70" 
+      [showUnits]="false"
+      [showSubtitle]="false" 
+      [outerStrokeWidth]="16" 
+      [innerStrokeWidth]="2" 
+      [outerStrokeColor]="'#9033FF'"
+      [outerStrokeColor]="'#9033FF'"
+      [innerStrokeColor]="'#CB9FFF'" 
+      [animation]="true" 
+      [animationDuration]="300">
+      </circle-progress>
+
+      <div>
+          <td>
+              <button class="btn btn-outline-info" routerLink="/editskill/{{skill.id}}">
+                  <i class="bi bi-pencil-fill"></i></button>
+          </td>
+          <td>
+              <button class="btn btn-danger" (click)="delete(skill.id)">
+                  <i class="bi bi-trash-fill"></i></button>
+          </td>
+      </div>
+      
+  </div>
+</div>
+
+
+
+
+
+
+
+<!-- <div class="row">
+  <h1>Hard & Soft Skills</h1>
+  <div class="text-center col-sm-4 col-md-4 col-lg-4">
+    <circle-progress
+      [percent]="85"
+      [radius]="100"
+      [imageSrc]="'../assets/html.svg'"
+      [showImage]="true"
+      [imageHeight]="70"
+      [imageWidth]="70"
+      [outerStrokeWidth]="16"
+      [innerStrokeWidth]="8"
+      [outerStrokeColor]="'#9033FF'"
+      [innerStrokeColor]="'#CB9FFF'"
+      [animation]="true"
+      [animationDuration]="300"
+    ></circle-progress>
+  </div>
+  <div class="text-center col-sm-4 col-md-4 col-lg-4">
+    <circle-progress
+      [percent]="85"
+      [radius]="100"
+      [imageSrc]="'../assets/css.svg'"
+      [showImage]="true"
+      [imageHeight]="70"
+      [imageWidth]="70"
+      [outerStrokeWidth]="16"
+      [innerStrokeWidth]="8"
+      [outerStrokeColor]="'#9033FF'"
+      [innerStrokeColor]="'#CB9FFF'"
+      [animation]="true"
+      [animationDuration]="300"
+    ></circle-progress>
+  </div>
+  <div class="text-center col-sm-4 col-md-4 col-lg-4">
+    <circle-progress
+      [percent]="80"
+      [radius]="100"
+      [imageSrc]="'../assets/js.svg'"
+      [showImage]="true"
+      [imageHeight]="70"
+      [imageWidth]="70"
+      [outerStrokeWidth]="16"
+      [innerStrokeWidth]="8"
+      [outerStrokeColor]="'#9033FF'"
+      [innerStrokeColor]="'#CB9FFF'"
+      [animation]="true"
+      [animationDuration]="300"
+    ></circle-progress>
+  </div>
+  <div class="text-center col-sm-4 col-md-4 col-lg-4">
+    <circle-progress
+      [percent]="80"
+      [radius]="100"
+      [imageSrc]="'../assets/my.svg'"
+      [showImage]="true"
+      [imageHeight]="70"
+      [imageWidth]="70"
+      [outerStrokeWidth]="16"
+      [innerStrokeWidth]="8"
+      [outerStrokeColor]="'#9033FF'"
+      [innerStrokeColor]="'#CB9FFF'"
+      [animation]="true"
+      [animationDuration]="300"
+    ></circle-progress>
+  </div>
+  <div class="text-center col-sm-4 col-md-4 col-lg-4">
+    <circle-progress
+      [percent]="65"
+      [radius]="100"
+      [imageSrc]="'../assets/an.svg'"
+      [showImage]="true"
+      [imageHeight]="70"
+      [imageWidth]="70"
+      [outerStrokeWidth]="16"
+      [innerStrokeWidth]="8"
+      [outerStrokeColor]="'#9033FF'"
+      [innerStrokeColor]="'#CB9FFF'"
+      [animation]="true"
+      [animationDuration]="300"
+    ></circle-progress>
+  </div>
+  <div class="text-center col-sm-4 col-md-4 col-lg-4">
+    <circle-progress
+      [percent]="70"
+      [radius]="100"
+      [imageSrc]="'../assets/en.svg'"
+      [showImage]="true"
+      [imageHeight]="70"
+      [imageWidth]="70"
+      [outerStrokeWidth]="16"
+      [innerStrokeWidth]="8"
+      [outerStrokeColor]="'#9033FF'"
+      [innerStrokeColor]="'#CB9FFF'"
+      [animation]="true"
+      [animationDuration]="300"
+    ></circle-progress>
+  </div>
+</div> -->

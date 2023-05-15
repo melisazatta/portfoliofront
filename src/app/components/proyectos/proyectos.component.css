@@ -1,0 +1,17 @@
+*{
+    background-color: rgb(36, 32, 63);
+}
+.row{
+    padding: 20px;
+}
+.container{
+    width: auto;
+}
+.a, .b{
+    display: inline-block;
+    text-align: justify;
+}
+.im-p{
+    box-shadow: 10px 10px 20px black;
+    box-shadow: ejeX ejeY difumasion color;
+}
